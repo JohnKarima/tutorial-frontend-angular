@@ -3,6 +3,9 @@
       <a href="#" class="navbar-brand">Tutorial Frontend</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
+            <a routerLink="registration" class="nav-link">Registration</a>
+          </li>
+        <li class="nav-item">
           <a routerLink="tutorials" class="nav-link">Tutorials</a>
         </li>
         <li class="nav-item">
@@ -10,15 +13,8 @@
         </li>
       </div>
     </nav>
-  
     <div class="container mt-3">
       <router-outlet></router-outlet>
     </div>
   </div>
-  <div>
-      <ul>
-          <li *ngFor="let tutorial of tutorials">
-              <h2>{{tutorial.title}}</h2>
-          </li>
-      </ul>
-  </div>
+  

@@ -1,7 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 const baseUrl = 'http://localhost:8000/api/tutorial/';
+
+const baseUrlRegister = 'http://localhost:8000/users/';
+
+const baseUrlLogin = 'http://localhost:8000/auth/';
+
+
+
 
 
 @Injectable({
@@ -37,5 +45,13 @@ export class TutorialService {
   
     findByTitle(title) {
       return this.http.get(`${baseUrl}?title=${title}`);
+    }
+
+    registerNewUser(data) {
+        return this.http.post(baseUrlRegister, data);
+    }
+
+    loginUser(data) {
+        return this.http.post(baseUrlLogin, data);
     }
   }

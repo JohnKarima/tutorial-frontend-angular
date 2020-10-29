@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="form-group">
+    <h1>
+        Registration/Login
+    </h1>
+    <label for="username">Username:</label><br>
+    <input [(ngModel)] ="input.username" placeholder="What should we call you?"><br><br>
+
+
+    <label for="email">Email:</label><br>
+    <input [(ngModel)] ="input.email" placeholder="Enter your Email"><br><br>
+
+    <label for="exampleInputPassword1">Password:</label><br>
+    <input [(ngModel)] ="input.password" type="password" placeholder="Enter your Password"><br><br>
+    <button (click)="registerUser()">Register User</button>
+    
+    
+    <!-- <p>or</p><button (click)="loginUser()">Login User</button> -->
+
+
+
+
+
+<!-- 
+<div class="container">
+
+<form>
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input [(ngModel)] ="input.username" class="form-control" id="username" aria-describedby="username" placeholder="What should we call you?">
+    </div>
+
+ 
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input [(ngModel)] ="input.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+    <button (click)="registerUser()" type="submit" class="btn btn-primary">Register User</button>
+  </form>
+
+</div> -->

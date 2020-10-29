@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TutorialService } from 'src/app/services/tutorial.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-tutorial-details',
@@ -8,6 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./tutorial-details.component.css']
 })
 export class TutorialDetailsComponent implements OnInit {
+  public Editor = ClassicEditor;
+
   currentTutorial = null;
   message = '';
 

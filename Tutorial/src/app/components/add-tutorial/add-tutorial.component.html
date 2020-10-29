@@ -35,17 +35,13 @@
         />
       </div>
   
-      <div class="form-group">
-        <label for="description">Tutorial Content</label>
-        <textarea
-          class="form-control"
-          id="description"
-          required
-          [(ngModel)]="tutorial.tutorial_content"
-          name="tutorial_content">
-        </textarea>
+      <label for="description">Tutorial Content</label>
 
-      </div>
+      <ckeditor [editor]="Editor" [(ngModel)]="tutorial.tutorial_content"  data="<textarea></textarea>"></ckeditor>
+
+
+
+      <br>
 
       <div class="form-group">
         <label for="description">Tutorial Author</label>
@@ -56,7 +52,7 @@
           [(ngModel)]="tutorial.tutorial_author"
           name="tutorial_content"
         />
-      </div>
+      </div><br>
   
       <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
     </div>
@@ -65,4 +61,7 @@
       <h4>You submitted successfully!</h4>
       <button class="btn btn-success" (click)="newTutorial()">Add</button>
     </div>
+    <!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor> -->
   </div>
+
+

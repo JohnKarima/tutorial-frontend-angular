@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TutorialService } from 'src/app/services/tutorial.service';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { TutorialService } from 'src/app/services/tutorial.service';
     styleUrls: ['./add-tutorial.component.css']
   })
   export class AddTutorialComponent implements OnInit {
+    public Editor = ClassicEditor;
+
     tutorial = {
       title: '',
       description: '',

@@ -9,6 +9,8 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistrationComponent } from './registration/registration.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AddTutorialComponent,
     TutorialDetailsComponent,
     TutorialsListComponent,
+    RegistrationComponent,
     
   ],
   imports: [
@@ -23,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    CKEditorModule,
+
     
   ],
   providers: [],
